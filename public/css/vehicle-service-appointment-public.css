@@ -1,0 +1,212 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+ #service-appointment-torque360 {
+    max-width: 650px;
+}
+#service-appointment-torque360 > p{
+  background: #efefef;
+  margin: 0;
+  padding: 15px 25px 0;
+  text-align: center;
+}
+#service-appointment-torque360 form {
+    margin: 0px;
+}
+#service-appointment-torque360 .search-block {
+    display: grid;
+    grid-template-columns: 25% 60% 15%;
+    padding: 25px 25px 0;
+    background: #efefef;
+    border-radius: 15px 15px 0 0;
+}
+#service-appointment-torque360 input, #service-appointment-torque360 select {
+    padding: 12px;
+    border-radius: 25px;
+    border: 0;
+    line-height: 1;
+    font-size: 14px;
+}
+#service-appointment-torque360 label{
+    font-size: 14px;
+    font-weight: 500;
+    padding-left: 5px;
+}
+#service-appointment-torque360 .customer-info, #service-appointment-torque360 .vehicle-info {
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 20px;
+    column-gap: 10px;
+}
+#service-appointment-torque360 .input-group{
+    display: grid;
+    gap: 3px;
+}
+#service-appointment-torque360 .search-block > select{
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+}
+#service-appointment-torque360 .search-block > input[type="text"]{
+  border-radius: 0px;
+}
+#service-appointment-torque360 .search-block > input[type="submit"]{
+    cursor: pointer;
+    color: #fff;
+    background: #ff6019;
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+}
+#appointment-form-torque360{
+    padding: 25px;
+    background: #efefef;
+}
+#appointment-form-torque360 .vehicle-selector > select{
+    width: 49%;
+}
+#appointment-form-torque360 .torque-step1, #appointment-form-torque360 .torque-step2 {
+    display: grid;
+    gap: 25px;
+}
+#service-appointment-torque360 .control-block {
+    display: flex;
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 0 0 15px 15px;
+    justify-content: end;
+}
+#service-appointment-torque360 .torque-btn{
+   font-size: 14px;
+   padding: 11px 33px;
+   border-radius: 25px;
+   background: #ff6019;
+   border: 0px;
+   color:#fff;
+   text-decoration: none;
+   cursor: pointer;
+   margin-right: 10px;
+}
+.torque-cards-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 25px;
+}
+.torque-card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    gap: 5px
+}
+.torque-card > img {
+     border: 15px solid #efefef;
+     border-radius: 25px;
+}
+.torque-card p {
+    margin: 0; 
+}
+.torque-card .customer-name,
+.torque-card .customer-car-model {
+    font-size: 16px;
+    font-weight: 500;
+}
+.torque-card .customer-mobile,
+.torque-card .customer-license-plate {
+    font-size: 12px;    
+}
+.date-input-group {
+    display: flex;
+    flex-direction: column;
+}
+.torque-date-time-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 25px;
+}
+.torque-date-time-container > div > label {
+    margin-bottom: 10px;
+}
+.radio-group {
+   overflow: hidden;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 10px;
+   gap: 20px;
+}
+input[type=radio] {
+  position: absolute;
+  visibility: hidden;
+  display: none;
+}
+.radio-group label {
+   background-color: #fff;
+   cursor: pointer;
+   padding: 5px 15px !important;
+   width: 100%;
+   text-align: center;
+   border-radius: 20px;
+}
+.radio-group input[type=radio]:checked + label{
+  color: #fff;
+  background: #ff6019;
+}
+.select2-dropdown {
+    font-size: 16px;
+}
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+    background-color: #ff6019 !important;
+    color: white !important;
+}
+button.select2-selection__choice__remove {
+    height: 100%;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__choice__display {
+    font-size: 16px;
+    padding: 0px 10px;
+    display: block;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+    background-color: #f1f1f1 !important;
+}
+.select2-container--default .select2-results__option--selected {
+    background-color: #ffb797 !important;
+}
+.ui-state-default.ui-state-hover, .ui-state-default.ui-state-active{
+    border: 1px solid #ff6019 !important;
+    background: #ff6019 !important;
+    color: white !important;
+}
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
+    border: 1px solid #ff6019 !important;
+}
+.ui-widget{
+    font-size: 16px !important;
+}
+/* .ui-datepicker{
+    width: 15em !important;
+} */
+.select2-container .select2-search--inline .select2-search__field {
+    font-size: 16px !important;
+}
+.loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+  }
+  
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }

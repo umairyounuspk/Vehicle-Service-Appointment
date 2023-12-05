@@ -1,0 +1,21 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+.torque-services .form-table tr:first-child {
+    display: none;
+}
+.torque-services .form-table{
+    width: 60%;
+}
+.torque-services .form-table tr > td:nth-child(1){
+    width: 70%;
+    padding: 1px;
+}
+.torque-services .form-table tr > td:last-child{
+    vertical-align: bottom;
+}
+.torque-services .form-table input {
+    width: 100%;
+}
